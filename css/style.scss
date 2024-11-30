@@ -5,19 +5,19 @@ $primary1: #0355cc;
 $primary2:#ff8a1d;
 
 // import fonts
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap');
 
 @mixin main-font {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Saira', sans-serif;
 }
 
-@mixin secondary-font {
-  font-family: 'Merriweather Sans', sans-serif;
-}
+// @mixin secondary-font {
+//   font-family: 'Merriweather Sans', sans-serif;
+// }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
   display: inline-block;
-  @include secondary-font();
+  // @include secondary-font();
   text-transform: uppercase;
   padding: $pad1 $pad2;
   background-color: $col1;
@@ -87,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    @include secondary-font();
+    @include main-font();
   }
 
   p {
@@ -102,7 +102,7 @@ body {
 
 h1,
 h2 {
-  @include secondary-font();
+  @include main-font();
 }
 
 a,
@@ -395,7 +395,7 @@ a:focus {
       .name {
         margin-top: 20px;
         text-transform: uppercase;
-        @include secondary-font();
+        @include main-font();
         margin-bottom: 0;
 
       }
