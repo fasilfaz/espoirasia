@@ -1,7 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap");
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Saira', sans-serif;
   color: #040000;
+}
+*{
+  font-family: 'Saira';
+}
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px; /* adjust the size as needed */
+  height: 40px; /* adjust the size as needed */
+  z-index: 1000; /* ensure it's on top of other elements */
+  color: #34C759;
+  font-size: 40px;
 }
 
 .layout_padding {
